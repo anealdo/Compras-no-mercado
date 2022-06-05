@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Algoritmos e Programação</title>
+    <script>
+    document.write("Projeto Algoritmo e Programação I" + "<br>");
+    </script>
+    <img src="Fluxograma compras.jpeg">
+</head>
+<body>
+    <script>
+        //Tomada de decisão sobre compras no supermercado
+        var valor_total_compra, arroz_tipo2, preco_arroz_tipo1, preco_arroz_tipo2, preco_feijao_branco, preco_feijao_preto, preco_linguica, preco_lentilha 
+        var arroz_tipo1 = prompt("Tem arroz tipo 1? Digite sim ou não")
+        if (arroz_tipo1 =="sim") {
+        preco_arroz_tipo1 = prompt("informe o preço do arroz tipo 1");
+        preco_arroz_tipo1 = parseInt(preco_arroz_tipo1)
+        preco_feijao_preto = prompt("informe o preço do feijão preto");
+        preco_feijao_preto = parseInt(preco_feijao_preto)
+        valor_total_compra = preco_arroz_tipo1 + (preco_feijao_preto*2)
+        } else  if (arroz_tipo1 =="não") {
+            arroz_tipo2 = prompt("Tem arroz tipo 2? Digite sim ou não")
+            if (arroz_tipo2 =="sim") {
+            preco_arroz_tipo2 = prompt("informe o preço do arroz tipo 2");
+            preco_arroz_tipo2 = parseInt(preco_arroz_tipo2)
+            preco_feijao_branco = prompt("informe o preço do feijão branco");
+            preco_feijao_branco = parseInt(preco_feijao_branco)
+            valor_total_compra = (preco_arroz_tipo2*3) + preco_feijao_branco
+            }   if (arroz_tipo2 =="não") {
+            preco_linguica = prompt("informe o preço da linguiça");
+            preco_linguica = parseInt(preco_linguica)
+            preco_lentilha =  prompt("informe o preço da lentilha");
+            preco_lentilha = parseInt(preco_lentilha)
+            valor_total_compra = (preco_lentilha * 2) + preco_linguica
+            }   
+        }
+        alert("o valor da sua compra foi " + valor_total_compra)
+    </script>    
+
+</body>
+</html>
